@@ -16,7 +16,7 @@ void SPI1_Initialize (void)
 {
     uint8_t rData;
     SPI1STAT = 0x0; /*Status clear*/
-    SPI1BRG = 0x5; /*SPI1BRG 0 --> set 2 MHz speed*/ 
+    SPI1BRG = 0x5; /*SPI1BRG 0x5 --> set 2 MHz speed*/ 
     SPI1CON2 = 0x0; /*Stops and resets the SPI1.*/
     rData=SPI1BUF; /*clears buffer*/
     SPI1CONbits.DISSDI = 1; //SDI is not used
