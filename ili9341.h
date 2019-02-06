@@ -45,7 +45,6 @@
 extern unsigned int max_x, max_y;
 extern unsigned int bgcolor;
 extern unsigned char rotation;
-//extern unsigned int width , height;
 extern int setMAX;
 
 // RGB888 convert to RGB565 = 65k color
