@@ -388,7 +388,7 @@ void block(unsigned int x0, unsigned int y0, unsigned int howmany, unsigned int 
 		int i;
 		for (i =0; i<FONT_X; i++ )
 		{
-			unsigned char temp = simpleFont[96][i];	// kocka
+			unsigned char temp = simpleFont[96][i];	// block
 			unsigned char f=0;
 			for(f=0;f<8;f++)
 			{
@@ -425,7 +425,7 @@ unsigned char putInteger(unsigned int val,unsigned int x0, unsigned int y0,unsig
     putString(bufor, x0, y0, size, fgcolor);
     }
  
-/*aletrnatywa funkcji putInteger, mniej zasobów pamieci*/
+/*aletrnatywa funkcji putInteger, mniej zasobÃ³w pamieci*/
 //unsigned char putInteger(unsigned int long_num,unsigned int x0, unsigned int y0,unsigned int size,unsigned int fgcolor)
 //{
 //	unsigned char char_buffer[10] = "";
@@ -475,7 +475,7 @@ unsigned char putFloat(float floatNumber, unsigned int x0, unsigned int y0, unsi
     putString(bufor, x0, y0, size, fgcolor);
     }
 
-/*aletrnatywa funkcji putFloat, mniej zasobów pamieci*/
+/*aletrnatywa funkcji putFloat, mniej zasobÃ³w pamieci*/
 //unsigned char putFloat(float floatNumber, unsigned int x0, unsigned int y0, unsigned int size, unsigned int fgcolor)
 //{
 //	unsigned char decimal=1;
@@ -528,7 +528,7 @@ void eqGraf(char *string, unsigned int x0, unsigned int y0, unsigned int howmany
 {
 	putString(string,x0,y0,size,fgcolor);
 
-	unsigned int bar_max = 10;	// Not for Soldano
+	unsigned int bar_max = 10;	
 	unsigned int duzy = strlen(string)*size*FONT_SPACE;
 	unsigned int nx0 = x0 + duzy;	// Shift for the length of string"
 	
