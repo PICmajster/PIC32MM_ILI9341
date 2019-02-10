@@ -605,7 +605,7 @@ void DrawBitmapRGB565(const uint16_t *Imagedata, uint16_t width, uint16_t height
 {
        
     uint16_t count;
-    uint16_t r,g,b,rgb;
+    uint16_t rgb;
     
     setWindow(x, y, x + width - 1, y + height - 1);
 
@@ -614,19 +614,7 @@ void DrawBitmapRGB565(const uint16_t *Imagedata, uint16_t width, uint16_t height
     		{
     			rgb = *Imagedata;
     			Imagedata++;
-
-    			/*zamiana pozycji r z b*/
-    			r = (rgb & 0x1F) << 11;
-    			g = (rgb & 0x7E0);
-    			b = (rgb & 0xF800) >> 11;
-                rgb = g + r + b ;
-
-                  if(rgb == 0x0000)
-    			   {
-    			      rgb = BLACK;
-    			   }
-
-    			sendData16(rgb);
+   			sendData16(rgb);
 
     		}
 
